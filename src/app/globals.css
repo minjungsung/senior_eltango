@@ -5,6 +5,9 @@
   --color-beluga: #2B2B2B;
   --color-storm: #6B7280;
   --color-evergreen: #2E7D32;
+  --color-warm: #FFF8F0;
+  --color-cream: #FFFBF5;
+  --color-gold: #C4873B;
 }
 
 body {
@@ -12,6 +15,7 @@ body {
   word-break: keep-all;
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
+  background-color: #FFFBF5;
 }
 
 h1, h2, h3 {

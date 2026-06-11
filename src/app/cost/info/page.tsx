@@ -28,7 +28,7 @@ export default function CostInfoPage() {
         <p>
           ※ 실제 비용은 등급과 이용일수에 따라 달라질 수 있습니다. 자세한 사항은 전화 문의 바랍니다.
         </p>
-        <p>☎ 1588-7418</p>
+        <p>☎ 010-2415-0563</p>
       </SubPageLayout>
     </>
   )

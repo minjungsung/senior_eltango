@@ -2,7 +2,7 @@ import SubPageLayout from '@/components/SubPageLayout';
 import Header from '@/components/Header';
 
 const notices = [
-  { id: 5, title: '웰니스 웰니스 탱고 스튜디오 엘땅고 엘땅고 오픈 안내', date: '2026-06-10', views: 42 },
+  { id: 5, title: '엘땅고 오픈 안내', date: '2026-06-10', views: 42 },
   { id: 4, title: '6월 프로그램 일정 안내', date: '2026-06-05', views: 38 },
   { id: 3, title: '여름철 냉방기기 운영 안내', date: '2026-06-01', views: 25 },
   { id: 2, title: '주차장 이용 안내사항', date: '2026-05-28', views: 19 },

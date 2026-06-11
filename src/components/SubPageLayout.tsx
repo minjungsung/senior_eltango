@@ -53,12 +53,11 @@ export default function SubPageLayout({ children, section }: { children: React.R
   return (
     <div className="pt-20 lg:pt-24">
       {/* Hero Banner */}
-      <div className="relative h-36 sm:h-48 md:h-64 flex items-center justify-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=75" alt="" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-beluga/70" />
-        <div className="relative text-center text-white px-4">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">{nav?.title}</h1>
-          {currentItem && <p className="mt-1 sm:mt-2 text-sm sm:text-base text-white/80">{currentItem.label}</p>}
+      <div className="relative h-36 sm:h-48 md:h-56 flex items-center justify-center overflow-hidden bg-warm">
+        <div className="absolute inset-0 bg-gradient-to-r from-tango/10 to-tango/5" />
+        <div className="relative text-center px-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-beluga">{nav?.title}</h1>
+          {currentItem && <p className="mt-1 sm:mt-2 text-sm sm:text-base text-storm">{currentItem.label}</p>}
         </div>
       </div>
 
