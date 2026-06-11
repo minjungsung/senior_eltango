@@ -15,14 +15,14 @@ const programs = [
 export default function ProgramSection() {
   return (
     <section className="py-12 sm:py-16 px-4 bg-white w-full max-w-[1300px]">
-      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
+      <div className="flex items-end justify-between gap-4 mb-6">
         <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold leading-snug">
           <span className="whitespace-pre-line md:whitespace-normal"><span className="text-tango">eltango</span>{"는\n다양한 프로그램을\n준비하고 있습니다"}</span>
         </h2>
         <div className="flex items-center gap-2 shrink-0">
           <button className="program-prev hidden lg:flex w-10 h-10 border rounded-lg items-center justify-center">‹</button>
           <button className="program-next hidden lg:flex w-10 h-10 border rounded-lg items-center justify-center">›</button>
-          <Link href="/program/list" className="text-xs sm:text-sm border rounded-lg px-3 py-2 hover:bg-tango hover:text-white transition">자세히 보기</Link>
+          <Link href="/program/list" className="text-xs sm:text-sm border rounded-lg px-3 py-2 hover:bg-tango hover:text-white transition whitespace-nowrap">자세히 보기</Link>
         </div>
       </div>
       <Swiper modules={[Navigation]} navigation={{ prevEl: '.program-prev', nextEl: '.program-next' }} spaceBetween={12} slidesPerView={1.2} breakpoints={{ 480: { slidesPerView: 1.5 }, 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3, spaceBetween: 16 } }}>
