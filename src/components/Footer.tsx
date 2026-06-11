@@ -31,7 +31,17 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <div className="rounded-lg bg-storm/30 h-48 sm:min-h-[240px] flex items-center justify-center text-white/40 text-sm">카카오맵</div>
+          <div className="rounded-lg overflow-hidden h-48 sm:min-h-[240px]">
+            <iframe
+              src="https://map.kakao.com/link/map/엘땅고,37.4836,127.0157"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              title="엘땅고 위치"
+            />
+          </div>
           <p className="mt-3 text-xs sm:text-sm text-white/70 whitespace-pre-line md:whitespace-normal">서초구 주흥길 12{"\n"}환희빌딩 2층, 서울탱고아카데미 엘땅고</p>
         </div>
       </div>

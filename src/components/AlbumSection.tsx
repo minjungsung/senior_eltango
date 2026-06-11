@@ -7,9 +7,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const albumImages = [
-  'https://images.unsplash.com/photo-1609234656388-0ff363383899?w=400&q=75',
-  'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=400&q=75',
-  'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=75',
+  'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=500&fit=crop&q=75',
+  'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=500&h=500&fit=crop&q=75',
+  'https://images.unsplash.com/photo-1609234656388-0ff363383899?w=500&h=500&fit=crop&q=75',
 ];
 
 export default function AlbumSection() {

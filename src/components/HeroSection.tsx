@@ -6,11 +6,24 @@ import Link from 'next/link';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+// 모바일: portrait(세로) 이미지, 데스크탑: landscape(가로) 이미지
 const slides = [
-  'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=75',
-  'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=75',
-  'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=75',
-  'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&q=75',
+  {
+    mobile: 'https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=600&h=900&fit=crop&q=75',
+    desktop: 'https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=1600&h=900&fit=crop&q=80',
+  },
+  {
+    mobile: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=900&fit=crop&q=75',
+    desktop: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&h=900&fit=crop&q=80',
+  },
+  {
+    mobile: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=900&fit=crop&q=75',
+    desktop: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1600&h=900&fit=crop&q=80',
+  },
+  {
+    mobile: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=900&fit=crop&q=75',
+    desktop: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1600&h=900&fit=crop&q=80',
+  },
 ];
 
 const quickLinks = [
@@ -23,11 +36,14 @@ export default function HeroSection() {
   return (
     <section className="relative h-[100svh] w-full">
       <Swiper modules={[Autoplay, Pagination]} autoplay={{ delay: 5000 }} pagination={{ clickable: true }} loop className="h-full w-full">
-        {slides.map((img, i) => (
+        {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div className="relative h-[100svh] w-full">
-              <img src={img} alt="" className="absolute inset-0 h-full w-full object-cover" loading={i === 0 ? 'eager' : 'lazy'} />
-              <div className="absolute inset-0 bg-black/40" />
+              {/* 모바일 세로형 */}
+              <img src={slide.mobile} alt="" className="absolute inset-0 h-full w-full object-cover md:hidden" loading={i === 0 ? 'eager' : 'lazy'} />
+              {/* 데스크탑 가로형 */}
+              <img src={slide.desktop} alt="" className="absolute inset-0 h-full w-full object-cover hidden md:block" loading={i === 0 ? 'eager' : 'lazy'} />
+              <div className="absolute inset-0 bg-black/35" />
               {i === 3 && (
                 <div className="absolute inset-0 flex flex-col items-start justify-end px-6 pb-40 sm:pb-36 lg:justify-center lg:items-center lg:pb-0">
                   <div className="rounded-xl backdrop-blur-md bg-beluga/30 px-6 py-5 sm:px-10 sm:py-8">
@@ -44,7 +60,6 @@ export default function HeroSection() {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* Quick links - 모바일: 하단 가로 스크롤, lg: 카드형 */}
       <div className="absolute bottom-6 left-0 right-0 z-10 px-4 lg:left-[10%] lg:right-auto lg:px-0">
         <div className="flex gap-3 overflow-x-auto pb-2 lg:gap-4">
           {quickLinks.map((c) => (

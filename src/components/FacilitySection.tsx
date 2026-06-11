@@ -11,7 +11,8 @@ export default function FacilitySection() {
           <Link href="/intro/facility" className="text-xs sm:text-sm border rounded-lg px-3 py-2 hover:bg-tango hover:text-white transition shrink-0">자세히 보기</Link>
         </div>
         <div className="relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[4/3] lg:aspect-[16/9]">
-          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=75" alt="시설" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=800&fit=crop&q=75" alt="시설" className="absolute inset-0 h-full w-full object-cover sm:hidden" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1400&h=700&fit=crop&q=80" alt="시설" className="absolute inset-0 h-full w-full object-cover hidden sm:block" loading="lazy" />
           <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-beluga/85 backdrop-blur px-4 py-2 sm:px-5 sm:py-3 rounded-lg">
             <h3 className="text-base sm:text-lg font-bold text-white">활동공간</h3>
             <p className="text-xs sm:text-sm text-white/80">2층</p>

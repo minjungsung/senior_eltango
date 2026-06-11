@@ -7,9 +7,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const programs = [
-  { title: '💪 시니어 맨손체조', category: '운동', desc: '맨손체조를 같이 즐겨봐요~!', img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=75' },
-  { title: '🧠 인지재활훈련', category: '교육', desc: '마음의 근육과 생각의 힘을 키워요.', img: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=75' },
-  { title: '💃 시니어 탱고 댄스', category: '교육', desc: '맞춤형 건강 댄스입니다.', img: 'https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=400&q=75' },
+  { title: '💪 시니어 맨손체조', category: '운동', desc: '맨손체조를 같이 즐겨봐요~!', img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&h=500&fit=crop&q=75' },
+  { title: '🧠 인지재활훈련', category: '교육', desc: '마음의 근육과 생각의 힘을 키워요.', img: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&h=500&fit=crop&q=75' },
+  { title: '💃 시니어 탱고 댄스', category: '교육', desc: '맞춤형 건강 댄스입니다.', img: 'https://images.unsplash.com/photo-1545959570-a94084071b5d?w=500&h=500&fit=crop&q=75' },
 ];
 
 export default function ProgramSection() {

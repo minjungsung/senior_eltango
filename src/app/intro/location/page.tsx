@@ -6,23 +6,23 @@ export default function LocationPage() {
     <>
       <Header />
       <SubPageLayout section="intro">
-        <h1 className="text-3xl font-bold text-storm mb-8">오시는길</h1>
-
-        <p className="text-gray-700 mb-6">광주광역시 앰코로 38 (오룡동 1114-2)</p>
-
-        <div className="bg-gray-200 rounded-xl aspect-video flex items-center justify-center text-gray-500 mb-8">
-          지도 영역
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6">오시는길</h1>
+        <p className="text-sm sm:text-base text-gray-700 mb-4">서초구 주흥길 12, 환희빌딩 2층</p>
+        <div className="rounded-xl overflow-hidden aspect-video sm:aspect-[16/9] mb-6">
+          <iframe
+            src="https://map.kakao.com/link/map/엘땅고,37.4836,127.0157"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            title="엘땅고 위치"
+          />
         </div>
-
-        <div className="space-y-4">
-          <p className="text-gray-700">
-            <span className="font-semibold text-storm">전화</span> 1588-7418
-          </p>
-
-          <section>
-            <h2 className="text-xl font-semibold text-evergreen mb-2">교통 안내</h2>
-            <p className="text-gray-600">대중교통 및 자가용 이용 안내는 추후 업데이트 예정입니다.</p>
-          </section>
+        <div className="space-y-3 text-sm sm:text-base">
+          <p><span className="font-semibold">전화 · 문자</span> 010-2415-0563</p>
+          <p><span className="font-semibold">이메일</span> fishlow0@daum.net</p>
+          <p className="text-storm">평일 낮에는 전화, 그 외 시간은 문자가 빨라요.</p>
         </div>
       </SubPageLayout>
     </>
