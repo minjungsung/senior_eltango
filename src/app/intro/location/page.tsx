@@ -10,7 +10,7 @@ export default function LocationPage() {
         <p className="text-sm sm:text-base text-gray-700 mb-4">서초구 주흥길 12, 환희빌딩 2층</p>
         <div className="rounded-xl overflow-hidden aspect-video sm:aspect-[16/9] mb-6">
           <iframe
-            src="https://map.kakao.com/link/map/엘땅고,37.4836,127.0157"
+            src="https://maps.google.com/maps?q=37.4836,127.0157&z=17&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

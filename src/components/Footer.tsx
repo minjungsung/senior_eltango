@@ -33,7 +33,7 @@ export default function Footer() {
         <div>
           <div className="rounded-xl overflow-hidden h-48 sm:min-h-[220px] border border-gray-100">
             <iframe
-              src="https://map.kakao.com/link/map/엘땅고,37.4836,127.0157"
+              src="https://maps.google.com/maps?q=37.4836,127.0157&z=17&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
