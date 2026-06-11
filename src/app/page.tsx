@@ -11,19 +11,15 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div id="main-scroll" className="h-[100svh] overflow-y-auto overflow-x-hidden">
-        <HeroSection />
-        <section className="mx-auto max-w-[1300px]">
-          <div className="flex flex-col gap-0">
-            <ProgramSection />
-            <AlbumSection />
-          </div>
-        </section>
-        <FacilitySection />
-        <ClinicSection />
-        <CtaSection />
-        <Footer />
-      </div>
+      <HeroSection />
+      <section className="mx-auto max-w-[1300px]">
+        <ProgramSection />
+        <AlbumSection />
+      </section>
+      <FacilitySection />
+      <ClinicSection />
+      <CtaSection />
+      <Footer />
     </main>
   );
 }
