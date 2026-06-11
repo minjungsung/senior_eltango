@@ -16,11 +16,11 @@ export default function AlbumSection() {
   return (
     <section className="py-12 sm:py-16 px-4 w-full max-w-[1300px]">
       <div className="flex flex-col lg:flex-row-reverse gap-6 lg:gap-8">
-        <div className="lg:w-1/3 text-center lg:text-right">
+        <div className="lg:w-1/3 text-left lg:text-right">
           <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold leading-snug">
-            <span className="whitespace-pre-line md:whitespace-normal"><span className="text-tango">eltango</span>{"는\n행복한 하루를 만들어 드립니다."}</span>
+            <span className="whitespace-pre-line md:whitespace-normal"><span className="text-tango">eltango</span>{"는\n행복한 하루를\n만들어 드립니다."}</span>
           </h2>
-          <div className="mt-3 flex items-center justify-center lg:justify-end gap-2">
+          <div className="mt-3 flex items-center justify-start lg:justify-end gap-2">
             <Link href="/notice/album" className="text-xs sm:text-sm border rounded-lg px-3 py-2 hover:bg-tango hover:text-white transition">자세히 보기</Link>
             <button className="album-prev hidden lg:flex w-10 h-10 border rounded-lg items-center justify-center">‹</button>
             <button className="album-next hidden lg:flex w-10 h-10 border rounded-lg items-center justify-center">›</button>

@@ -9,10 +9,10 @@ export default function ClinicSection() {
           <span className="text-base sm:text-xl md:text-2xl text-gray-400">×</span>
           <span className="text-base sm:text-xl md:text-2xl font-bold">eltango Clinic</span>
         </div>
-        <p className="text-center text-base sm:text-lg md:text-2xl leading-relaxed mb-5">
-          <span className="whitespace-pre-line md:whitespace-normal">{"웰니스 탱고 스튜디오 엘땅고와\n엘땅고 클리닉이 함께,\n시니어 건강을 위한 "}<span className="text-tango font-semibold">한방 의료 · 건강 프로그램</span>{"을\n제공합니다."}</span>
+        <p className="text-left text-base sm:text-lg md:text-2xl leading-relaxed mb-5">
+          <span className="whitespace-pre-line md:whitespace-normal">{"웰니스 탱고 스튜디오 엘땅고와\n엘땅고 클리닉이 함께,\n시니어 건강을 위한\n"}<span className="text-tango font-semibold">한방 의료 · 건강 프로그램</span>{"을\n제공합니다."}</span>
         </p>
-        <div className="text-center mb-6">
+        <div className="text-left mb-6">
           <Link href="/program/checkup" className="text-xs sm:text-sm border rounded-lg px-3 py-2 hover:bg-tango hover:text-white transition">자세히 보기</Link>
         </div>
         <div className="rounded-xl sm:rounded-2xl overflow-hidden aspect-[3/2] sm:aspect-[16/10] md:aspect-[16/9] mb-6">
