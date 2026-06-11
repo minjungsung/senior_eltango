@@ -18,7 +18,7 @@ export default function AlbumSection() {
       <div className="flex flex-col lg:flex-row-reverse gap-6 lg:gap-8">
         <div className="lg:w-1/3 text-center lg:text-right">
           <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold leading-snug whitespace-pre-line md:whitespace-normal">
-            <span className="text-tango">eltango</span>는{"\n"}행복한 하루를 만들어 드립니다.
+            <span className="text-tango">eltango</span>{"는\n행복한 하루를 만들어 드립니다."}
           </h2>
           <div className="mt-3 flex items-center justify-center lg:justify-end gap-2">
             <Link href="/notice/album" className="text-xs sm:text-sm border rounded-lg px-3 py-2 hover:bg-tango hover:text-white transition">자세히 보기</Link>

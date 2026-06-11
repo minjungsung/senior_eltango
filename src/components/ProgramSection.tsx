@@ -17,7 +17,7 @@ export default function ProgramSection() {
     <section className="py-12 sm:py-16 px-4 bg-white w-full max-w-[1300px]">
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
         <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold leading-snug whitespace-pre-line md:whitespace-normal">
-          <span className="text-tango">eltango</span>는{"\n"}다양한 프로그램을 준비하고 있습니다
+          <span className="text-tango">eltango</span>{"는 다양한\n프로그램을 준비하고 있습니다"}
         </h2>
         <div className="flex items-center gap-2 shrink-0">
           <button className="program-prev hidden lg:flex w-10 h-10 border rounded-lg items-center justify-center">‹</button>
