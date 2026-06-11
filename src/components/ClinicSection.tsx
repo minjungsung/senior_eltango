@@ -19,7 +19,7 @@ export default function ClinicSection() {
           <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=75" alt="eltango Clinic" className="h-full w-full object-cover" loading="lazy" />
         </div>
         <p className="text-left text-sm sm:text-base text-storm leading-relaxed">
-          <span className="whitespace-pre-line md:whitespace-normal">{"주간보호와 한방·건강관리가\n하나로 이어져, 첫 검진·상비약·\n운동 모니터링·건강체크 상담·\n분기별 점검 등을\n무료로 진행해 드립니다."}</span>
+          <span className="whitespace-pre-line md:whitespace-normal">{"주간보호와 한방·건강관리가 하나로 이어져, \n첫 검진·상비약·운동 모니터링·건강체크 상담·분기별 점검 등을 무료로 진행해 드립니다."}</span>
         </p>
       </div>
     </section>
